@@ -1,5 +1,5 @@
-// - Violet: hsl(257, 40%, 49%)
-// - Soft Magenta: hsl(300, 69%, 71%)
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
 
 // BODY
 // font-family: 'Open Sans', sans-serif;
@@ -7,8 +7,114 @@
 // HEADINGS
 // font-family: 'Poppins', sans-serif;
 
-body {
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg-mobile.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $violet;
+}
+
+.container {
+    width: 23rem;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+}
+
+header {
+    margin: 1rem 0 3rem 0;
+
+    #logo {
+        width: 8rem;
+        height: 3rem;
+    }
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .banner {
+        margin-bottom: 2.5rem;
+
+        img {
+            width: 21rem;
+        }
+    }
+
+    .about {
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.75rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.75rem;
+        }
+
+        .signup {
+            margin: 3rem;
+            
+            #register {
+                background-color: #fff;
+                color: $violet;
+                text-decoration: none;
+                padding: 1rem 6rem;
+                border-radius: 1.75rem;
+                box-shadow: 0px .2rem .75rem rgba(0, 0, 0, 0.39);
+                transition: all 250ms linear;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $soft-magenta;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        margin-top: 5rem;
+    
+        
+        .social {
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            padding-top: .5rem;
+            margin:1rem .25rem;
+            transition: all 200ms linear;
+        }
+
+        .social:hover {
+            color: $soft-magenta;
+            border-color: $soft-magenta;
+        }
+    }
+
+}
+
+
+
+
+
 
 
 .attribution { 
