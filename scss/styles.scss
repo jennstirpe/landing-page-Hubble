@@ -1,12 +1,6 @@
 $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
 
-// BODY
-// font-family: 'Open Sans', sans-serif;
-
-// HEADINGS
-// font-family: 'Poppins', sans-serif;
-
 * {
     box-sizing: border-box;
 }
@@ -91,7 +85,6 @@ header {
     .social-links {
         margin-top: 5rem;
     
-        
         .social {
             color: #fff;
             border: 1px solid #fff;
@@ -111,9 +104,74 @@ header {
 
 }
 
+/*      RESPONSIVE STYLES       */
 
+@media only screen and (min-width: 1440px) {
+    body {
+        height: 100vh;
+        background-image: url("../images/bg-desktop.svg");
+    }
 
+    .container {
+        width: 65rem;
+    }
 
+    header {
+    
+        #logo {
+            width: 12rem;
+            height: 5rem;
+        }
+    }
+
+    .overview {
+        flex-direction: row;
+        text-align: left;
+    
+        .banner {
+    
+            img {
+                width: 32.5rem;
+            }
+        }
+
+        .about {
+            width: 32.5rem;
+            padding: 2rem;
+
+            h1 {
+                font-size: 2.25rem;
+                margin: 0;
+                font-weight: 400;
+            }
+    
+            .description {
+                font-size: .93rem;
+                line-height: 1.5rem;
+            }
+    
+            .signup {
+                margin: 2rem 0;
+                
+                #register {
+                    padding: .75rem 3.5rem;
+                    border-radius: 1.75rem;
+                    box-shadow: 0px .2rem .75rem rgba(0, 0, 0, 0.452);
+                }
+            }
+        }
+
+    }
+
+    .social-links {
+        text-align: right;
+        
+        .social {
+            text-align: center;
+        }
+    }
+
+}
 
 
 
